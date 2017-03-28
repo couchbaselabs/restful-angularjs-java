@@ -45,13 +45,13 @@ public class Application implements Filter {
     @Override
     public void destroy() {}
 
-    @Value("${hostname}")
+    @Value("${couchbase_host}")
     private String hostname;
 
-    @Value("${bucket}")
+    @Value("${couchbase_bucket}")
     private String bucket;
 
-    @Value("${password}")
+    @Value("${couchbase_bucket_password}")
     private String password;
 
     public @Bean
